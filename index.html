@@ -5,47 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apha</title>
     <link rel="stylesheet" href="./Styles/index.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
 <!-- Navbar Start -->
-<nav class="bg-blue-900 text-white px-6 py-4 flex items-center justify-between">
+
+   <nav class="bg-blue-900 text-white px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
+    <div class="flex items-center space-x-2 mb-4 md:mb-0">
         <span class="font-bold text-xl">Team Alpha</span>
     </div>
-    <!-- Desktop Nav Links: Evenly spaced and centered -->
-    <div class="hidden md:flex flex-1 justify-center">
-        <div class="flex space-x-12">
-            <a href="#home" class="hover:text-blue-400 scroll-smooth">Home</a>
-            <a href="#about" class="hover:text-blue-400 scroll-smooth">About</a>
-            <a href="#services" class="hover:text-blue-400 scroll-smooth">Services</a>
-            <a href="#portfolio" class="hover:text-blue-400 scroll-smooth">Portfolio</a>
-            <a href="#pricing" class="hover:text-blue-400 scroll-smooth">Pricing</a>
-            <a href="#contact" class="hover:text-blue-400 scroll-smooth">Contact</a>
-        </div>
-    </div>
-    <!-- Mobile Menu Button -->
-    <div class="md:hidden">
-        <button id="menu-btn" class="focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
+    <!-- Nav Links: Stack vertically on mobile, horizontally on desktop -->
+    <div class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-12 md:items-center w-full md:w-auto">
+        <a href="#home" class="hover:text-blue-400 scroll-smooth">Home</a>
+        <a href="#about" class="hover:text-blue-400 scroll-smooth">About</a>
+        <a href="#services" class="hover:text-blue-400 scroll-smooth">Services</a>
+        <a href="#portfolio" class="hover:text-blue-400 scroll-smooth">Portfolio</a>
+        <a href="#pricing" class="hover:text-blue-400 scroll-smooth">Pricing</a>
+        <a href="#contact" class="hover:text-blue-400 scroll-smooth">Contact</a>
     </div>
 </nav>
-<!-- Mobile Nav Links -->
-<div id="mobile-menu" class="md:hidden bg-gray-900 text-white px-6 py-4 hidden flex-col space-y-4">
-    <a href="home" class="hover:text-blue-400 scroll-smooth">Home</a>
-            <a href="about" class="hover:text-blue-400 scroll-smooth">About</a>
-            <a href="#services" class="hover:text-blue-400 scroll-smooth">Services</a>
-            <a href="#portfolio" class="hover:text-blue-400 scroll-smooth">Portfolio</a>
-            <a href="#pricing" class="hover:text-blue-400 scroll-smooth">Pricing</a>
-            <a href="#contact" class="hover:text-blue-400 scroll-smooth">Contact</a>
-</div>
 <style>
   html {
     scroll-behavior: smooth;
